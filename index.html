@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<!-- FontWesome CSS-->
+	<link rel="stylesheet" type="text/css" href="css/all.min.css"> 
+
+	<!-- Bootstrap CSS-->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+
+	<!-- Custom Css -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+<!-- Start Navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+    <a class="navbar-brand" href="index.html">CONTACT</a>
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">Home </a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="#">About us</a>
+      </li> -->
+      
+    </ul>
+    <!-- <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+    </form> -->
+  </div>
+</nav>
+
+<!-- End Navbar -->
+
+
+
+<div id="contact" class="m-5">
+	<div class="">
+		<div class="row">
+			<div class="col-sm" style="">
+				<center><h2>Contact Form</h2></center>
+
+<!-- Start Contact Form -->
+		<form class="p-5">
+			<div class="form-group">
+		
+				<!-- Title -->
+			<label for="title">Title <span class="text-danger">*</span></label>   
+		    <select class="form-control" id="title" name="title">
+		    	<option value=""></option>
+		    	<option>Mr.</option>
+		    	<option>Mrs.</option>
+		    	<option>Ms.</option>
+		    </select>
+		    <small id="titleMsg"></small>
+		  </div>
+
+		  <!-- First Name -->
+		  <div class="form-group">
+		    <label for="firstName">First Name <span class="text-danger">*</span></label>
+		    <input type="text" class="form-control" id="firstName" name="firstName"> <small id="fNameMsg"></small>
+		  </div>
+
+		  <!-- Last Name -->
+		  <div class="form-group">
+		    <label for="lastName">Last Name <span class="text-danger">*</span></label>
+		    <input type="text" class="form-control" id="lastName" name="lastName"><small id="lNameMsg"></small>
+		  </div>
+
+		  <!-- Date of Birth -->
+		  <div class="form-group">
+		    <label for="dob">Date Of Birth</label>
+		    <input type="date" class="form-control" id="dob" name="dob">
+		  </div>
+
+		  <!-- Phone Number -->
+		  <div class="form-group">
+		    <label for="phoneNo">Phone Number <span class="text-danger">*</span></label>
+		    <input type="text" class="form-control" id="phoneNo" name="phoneNo"><small id="phoneMsg"></small>
+		  </div>
+
+		  <!-- Upload PDF File -->
+		  <div class="form-group">
+		    <label for="pdfFIle">Upload File</label>(Only Pdf)
+		    <input type="file" class="form-control" id="pdfFIle" name="pdfFIle" accept="application/pdf">
+		  </div>
+
+		  <!-- Email -->
+		  <div class="form-group">
+		    <label for="email">Email address <span class="text-danger">*</span></label>
+		    <input type="email" class="form-control" id="email" name="email">
+		  </div>
+		  
+		  <!-- Comment -->
+		  <div class="form-group">
+		    <label for="message">Message <span class="text-danger">*</span></label>
+		    <textarea class="form-control" id="message" name="message"></textarea>
+		    <small id="messageMsg"></small>
+		  </div>
+
+		  
+		</form>
+		<button type="submit" class="btn btn-primary" onclick="sendData()" style="margin: 15px;">Submit</button>		
+
+<!-- End Contact Form -->
+
+			</div>
+			<div class="col-sm">
+				<div class="card m-5">
+					<div class="card-body" style="background-image: linear-gradient(20deg, red, brown);color: white;">
+						<center>
+						<h4 style="font-weight: bolder;">Contact Me</h4>
+						<p>Garel pada, Santosh Bhuvan, Nallasopara east,401209 Palghar</p>
+						<p>9876543210/9658741230</p>
+						<p>www.jogendra.com</p>
+						</center>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+<!-- Footer -->
+
+<div id="footer" style="background-color: brown;">
+	<div class="container">
+		<center><p style="color: white;padding: 4px;">copyright &copy; 2019 || Designed By Jogendra Padihari</p></center>
+		
+	</div>
+</div>
+
+
+
+
+<!-- Jquery -->
+<script type="text/javascript" src="js/jquery.js"></script>
+
+<!-- Font Awesome JS -->
+<script type="text/javascript" src="js/all.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<!-- Pooper JS -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+
+
+<!-- Request AJAX JS -->
+<script type="text/javascript" src="js/ajaxrequest.js"></script>
+</body>
+</html>
